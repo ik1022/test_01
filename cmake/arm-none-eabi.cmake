@@ -17,4 +17,4 @@ set(CMAKE_ASM_FLAGS "-mcpu=cortex-m0 -mthumb" CACHE STRING "" FORCE)
 
 
 # objcopy
-# arm-none-eabi-objcopy -O ihex mm32g0001_test03.elf mm32g0001_test03.hex 
+# arm-none-eabi-objcopy -O ihex mm32g0001_test03.elf mm32g0001_test03.hex

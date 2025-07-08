@@ -12,7 +12,7 @@ __WEAK void NMI_Handler				(void) { while(1) {} }
 __WEAK void HardFault_Handler		(void) { while(1) {} }
 __WEAK void SVC_Handler				(void) { while(1) {} }
 __WEAK void PendSV_Handler			(void) { while(1) {} }
-											
+
 __WEAK void SysTick_Handler			(void) { while(1) {} }
 
 __WEAK void LVI_Handler        		(void) { while(1) {} }
@@ -111,7 +111,7 @@ pHandler __isr_vectors[] __VECTOR_TABLE_ATTRIBUTE = {
 	0,                    	//      -3  Reserved
 	PendSV_Handler,       	//      -2  PendSV Handler
 	SysTick_Handler,      	//      -1  SysTick Handler
-	
+
 	//External Interrupts
 	LVI_Handler,			//	IRQ 0
 	WUT_Handler,    		//	IRQ 1
@@ -156,4 +156,3 @@ void Reset_Handler(void)
 
     while (1) {}
 }
-
