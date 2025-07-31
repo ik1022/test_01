@@ -28,10 +28,13 @@ target_include_directories(mcu.elf PRIVATE
 	${CMAKE_SOURCE_DIR}/Device_A31G12x
 )
 
-# target_compile_options(mcu.elf PRIVATE
-#    ${CMAKE_C_FLAGS}
-# )
+# CppUTest integration
+set(CPPUTEST_HOME ${CMAKE_SOURCE_DIR}/cpputest_build CACHE PATH "Path to CppUTest build directory")
+add_subdirectory(tests)
 
-# enable_testing()
-# add_subdirectory(tests)
-# add_test(NAME LedTest COMMAND unit_tests)
+
+enable_testing()
+
+
+
+add_test(NAME RunUnitTests COMMAND UnitTests)

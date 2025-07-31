@@ -2,7 +2,19 @@
 // README at: https://github.com/devcontainers/templates/tree/main/src/cpp
 {
 	"name": "C++",
-	"image": "git.etc-lab.kr/ik1022/cpp-container"
+	"image": "git.etc-lab.kr/ik1022/cpp-container",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-azuretools.vscode-containers",
+				"ms-vscode.cmake-tools",
+				"MS-CEINTL.vscode-language-pack-ko",
+				"ms-vscode.cpptools-themes",
+				"ms-vscode.cpptools-extension-pack",
+				"ms-vscode.cpptools"
+			]
+		}
+	}
 	// "build": {
 	//	"dockerfile": "Dockerfile"
 	//}
