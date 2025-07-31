@@ -71,6 +71,10 @@ _erase.sh
 pyocd erase -uremote:host.docker.internal:5555 --mass
 ```
 
+## 단축키
+- 테스트 빌드 F7
+- 테스트실행 ctrl+; a
+
 ## 주의사항
 - 쉘스크립트 파일의 줄바꿈은 LF 를 사용하도록 한다.
 
