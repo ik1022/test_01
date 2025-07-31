@@ -1,24 +1,27 @@
-# Embedded Cpp with Unitest (CppUTest)
+# Embedded Cpp Project with CppUTest(Unittest)
 
-## 사전 준비사랑
+## 사전 준비사항
 
 ### 1. tools setup
 - git
 - docker
 - vscode
   - Dev Containers 확장
-### 2. docker login in host pc
+
+### 2. docker저장소 login in host pc
 ```sh
 docker login https://git.etc-lab.kr
 id: <your_id>
 pass: <your_password>
 ```
+
 ### 3. 소스코드 다운로드 및 vscode 에서 열기
 ```sh
 git clone git clone https://git.etc-lab.kr/ik1022/test_01.git test_01
 cd test_01
 code .
 ```
+
 ### 4. vscode 에서 컨테이너로 열기
 
 
