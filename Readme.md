@@ -17,7 +17,7 @@ pass: <your_password>
 
 ### 3. 소스코드 다운로드 및 vscode 에서 열기
 ```sh
-git clone git clone https://git.etc-lab.kr/ik1022/test_01.git test_01
+git clone https://git.etc-lab.kr/ik1022/test_01.git test_01
 cd test_01
 code .
 ```
@@ -71,10 +71,13 @@ _erase.sh
 pyocd erase -uremote:host.docker.internal:5555 --mass
 ```
 
+## 주의사항
+- 쉘스크립트 파일의 줄바꿈은 LF 를 사용하도록 한다.
+
 
 ## 앞으로 할일
-  - [ ] vscode 에서 pyocd 를 통한 디버깅 설정
-  - [ ] vscode 유닛테스트 확장 설정
-  - [ ] gitea act 를 통한 CI/CD 설정
-  - [ ] cpp 컴파일 테스트
-  - [x] 쉘스크립트 실행 안되는 문제 해결
+- [ ] vscode 에서 pyocd 를 통한 디버깅 설정
+- [ ] vscode 유닛테스트 확장 설정
+- [ ] gitea act 를 통한 CI/CD 설정
+- [ ] cpp 컴파일 테스트
+- [x] 쉘스크립트 실행 안되는 문제 해결

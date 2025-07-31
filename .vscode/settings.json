@@ -4,5 +4,6 @@
     "files.trimFinalNewlines": true,
     "notebook.insertFinalNewline": false,
     "files.insertFinalNewline": true,
-    "files.trimTrailingWhitespace": true
+    "files.trimTrailingWhitespace": true,
+    "files.eol": "\n"
 }
