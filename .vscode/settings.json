@@ -5,5 +5,20 @@
     "notebook.insertFinalNewline": false,
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
-    "files.eol": "\n"
+    "files.eol": "\n",
+    "cpputestTestAdapter.preLaunchTask": "",
+    "cpputestTestAdapter.testExecutable": "UnitTests",
+    "cpputestTestAdapter.testExecutablePath": "${workspaceFolder}/build/tests",
+    "cpputestTestAdapter.debugLaunchConfigurationName": "test0001",
+    "cmake.automaticReconfigure": false,
+    "cmake.ctest.testExplorerIntegrationEnabled": true,
+    "cmake.saveBeforeBuild": false,
+    "cpputestTestAdapter.testLocationFetchMode": "auto",
+    "cpputestTestAdapter.objDumpExecutable": "objdump",
+    "cmake.buildBeforeRun": true,
+    "cmake.buildTask": true,
+    "cmake.configureArgs": [
+        "-GNinja",
+        "-DBUILD_FOR_UNIT_TESTS=ON"
+    ]
 }
