@@ -11,7 +11,8 @@
 				"MS-CEINTL.vscode-language-pack-ko",
 				"ms-vscode.cpptools-themes",
 				"ms-vscode.cpptools-extension-pack",
-				"ms-vscode.cpptools"
+				"ms-vscode.cpptools",
+				"yzhang.markdown-all-in-one"
 			]
 		}
 	}
