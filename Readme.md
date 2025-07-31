@@ -1,6 +1,13 @@
 # Embedded Cpp test
+### docker login
+```sh
+# in host pc
+docker login https://git.etc-lab.kr
+id:
+pass: 
+```
 
-###old 
+### old in container
 
 ``` sh
 arm-none-eabi-gcc -mcpu=cortex-m0 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -g -I"..\Device_A31G12x" -std=gnu11 -MMD -MP -MF"App/main.d" -MT"App/main.o" -c -o "App/main.o" "../App/main.c"
@@ -15,18 +22,18 @@ arm-none-eabi-objcopy -O ihex mm32g0001_test03.elf mm32g0001_test03.hex
 
 
 
-### new 
+### new in container
 
 ```sh
 
 cmake -S. -B.build -GNinja
-cmake --build .build
+cmake --build .build --clean-first
 ctest  --test-dir .build/
 .build/tests/UnitTests -v
 
 arm-none-eabi-objcopy -Oihex .build/mcu.elf .build/mcu.hex
 
-pyocd erase --pack ABOV.A31G1xx_Series.2.5.0.pack -uremote:host.docker.internal:5555 --mass
+pyocd erase --pack ABOV.A31G1xx_Series.2.5.0.pack -uremote:host.docker.internal:5555 --mass -ta31g123
 
-pyocd flash --pack ABOV.A31G1xx_Series.2.5.0.pack -uremote:host.docker.internal:5555 .build/mcu.hex
+pyocd flash --pack ABOV.A31G1xx_Series.2.5.0.pack -uremote:host.docker.internal:5555 -ta31g123 .build/mcu.hex
 ```
