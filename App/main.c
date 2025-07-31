@@ -2,8 +2,9 @@
 int *pfmod = (int *)0x30000500UL;
 int *pfout = (int *)0x30000518UL;
 
-void main() {
-	volatile int i = 0;
+void main()
+{
+    volatile int i = 0;
 
     *((int *)0x40001A00) = 0x5A690000 | (37 << 10) | (26 << 4);
     *((int *)0x40001820) = 0x20;
@@ -22,12 +23,6 @@ void main() {
     }
 }
 
+void SystemInit(void) {}
 
-void SystemInit(void) {
-
-}
-
-
-void SysTick_Handler(void) {
-
-}
+void SysTick_Handler(void) {}

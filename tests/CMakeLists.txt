@@ -23,5 +23,3 @@ target_link_libraries(UnitTests
 )
 
 add_test(NAME RunUnitTests COMMAND UnitTests)
-
-
