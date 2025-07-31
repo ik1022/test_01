@@ -15,7 +15,12 @@
 				"yzhang.markdown-all-in-one",
 				"bneumann.cpputest-test-adapter",
 				"hbenl.vscode-test-explorer",
-				"ms-vscode.test-adapter-converter"
+				"ms-vscode.test-adapter-converter",
+				"marus25.cortex-debug",
+				"mcu-debug.memory-view",
+				"mcu-debug.peripheral-viewer",
+				"mcu-debug.rtos-views",
+				"mcu-debug.debug-tracker-vscode"
 			]
 		}
 	}

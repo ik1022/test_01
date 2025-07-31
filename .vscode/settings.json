@@ -20,5 +20,10 @@
         "-GNinja",
         "-DBUILD_FOR_UNIT_TESTS=ON"
     ],
-    "cpputestTestAdapter.logpanel": false
+    "cpputestTestAdapter.logpanel": false,
+    "cortex-debug.liveWatchRefreshRate": 500,
+    "cortex-debug.variableUseNaturalFormat": false,
+    "cortex-debug.armToolchainPath": "/usr/bin",
+    "cortex-debug.gdbPath": "/usr/bin/gdb",
+    "cortex-debug.pyocdPath": "/usr/bin/pyocd",
 }

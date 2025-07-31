@@ -19,9 +19,9 @@ if(MCU_BUILD)
     set(CMAKE_CXX_COMPILER arm-none-eabi-g++)
     set(CMAKE_ASM_COMPILER arm-none-eabi-gcc)
 
-    set(CMAKE_C_FLAGS "-mcpu=cortex-m0 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -g -std=gnu11 " CACHE STRING "" FORCE)
-    set(CMAKE_CXX_FLAGS "-mcpu=cortex-m0 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -g -std=gnu11 " CACHE STRING "" FORCE)
-    set(CMAKE_EXE_LINKER_FLAGS "-mcpu=cortex-m0 -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -g -Xlinker --gc-sections -s --specs=nano.specs --specs=nosys.specs -T ${CMAKE_SOURCE_DIR}/Device_A31G12x/mem_4k_32k.ld -T ${CMAKE_SOURCE_DIR}/Device_A31G12x/sections.ld")
+    set(CMAKE_C_FLAGS "-mcpu=cortex-m0 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -g3 -std=gnu11 " CACHE STRING "" FORCE)
+    set(CMAKE_CXX_FLAGS "-mcpu=cortex-m0 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -g3 -std=gnu11 " CACHE STRING "" FORCE)
+    set(CMAKE_EXE_LINKER_FLAGS "-mcpu=cortex-m0 -mthumb -O0 -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -g3 -Xlinker --gc-sections -s --specs=nano.specs --specs=nosys.specs -T ${CMAKE_SOURCE_DIR}/Device_A31G12x/mem_4k_32k.ld -T ${CMAKE_SOURCE_DIR}/Device_A31G12x/sections.ld")
 
     add_executable(mcu.elf
         Device_A31G12x/A31G_startup.c
