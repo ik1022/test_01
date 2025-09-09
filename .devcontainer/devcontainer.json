@@ -2,7 +2,7 @@
 // README at: https://github.com/devcontainers/templates/tree/main/src/cpp
 {
 	"name": "C++",
-	//"image": "git.etc-lab.kr/ik1022/cpp-container",
+	"image": "ik1022a/cpp-container",
 	"customizations": {
 		"vscode": {
 			"extensions": [
@@ -24,9 +24,9 @@
 			]
 		}
 	}
-	"build": {
-		"dockerfile": "Dockerfile"
-	}
+	//"build": {
+	//	"dockerfile": "Dockerfile"
+	//}
 	
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
