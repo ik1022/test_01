@@ -7,8 +7,8 @@
     "files.trimTrailingWhitespace": true,
     "files.eol": "\n",
     "cpputestTestAdapter.preLaunchTask": "build_for_unittest",
-    "cpputestTestAdapter.testExecutable": "${workspaceFolder}/build/tests/UnitTests",
-    "cpputestTestAdapter.testExecutablePath": "${workspaceFolder}/build/tests",
+    "cpputestTestAdapter.testExecutable": "${workspaceFolder}/.build_test/tests/UnitTests",
+    "cpputestTestAdapter.testExecutablePath": "${workspaceFolder}/.build_test/tests",
     "cpputestTestAdapter.debugLaunchConfigurationName": "",
     "cmake.automaticReconfigure": false,
     "cmake.ctest.testExplorerIntegrationEnabled": false,
@@ -26,4 +26,5 @@
     "cortex-debug.armToolchainPath": "/usr/bin",
     "cortex-debug.gdbPath": "/usr/bin/gdb",
     "cortex-debug.pyocdPath": "/usr/bin/pyocd",
+    "cpputestTestAdapter.objDumpExecutable": "",
 }

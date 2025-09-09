@@ -1,5 +1,5 @@
 #!/bin/sh
 
-cmake --build build
+cmake --build .build_test --clean-first
 
 exit 0
